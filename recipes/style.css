@@ -74,3 +74,20 @@ li {
     padding: 20px;
   }
 }
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;          /* prevents giant images on desktop */
+  object-fit: cover;          /* keeps it nicely cropped if constrained */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .recipe-image {
+    max-height: 220px;        /* smaller banner on phones */
+    border-radius: 8px;
+  }
+}
